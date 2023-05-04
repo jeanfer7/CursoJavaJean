@@ -1,0 +1,34 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+		System.out.println("Hola Mundo");
+		
+		//Tipos de datos primitivos
+		int numero = 20;
+		System.out.println(numero + "20");
+		
+		
+		double medio = 0.5; 
+		System.out.println(medio);
+		
+		boolean verdadero = true;
+		System.out.println(verdadero);
+		//tipos de dato objeto (hay que pedir memoria con new)
+		String nombre = "Jean"; //como es tan comun se omite new
+		//String nombre = new String("Hola")
+		System.out.println(nombre);
+		
+		
+		@SuppressWarnings("removal")
+		Integer num = new Integer(2); // me da error
+		System.out.println(num);
+		
+		//conversion de tipos
+		//numero = medio; no compila, asignacion invalida (Type missmatch)
+		medio = numero; // conversión implícita
+		System.out.println(medio);
+	}
+	
+
+}
